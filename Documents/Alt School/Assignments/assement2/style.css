@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-container {
+  height: 100vh;
+  width: 100%;
+  max-width: 75%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-container {
+  width: 40%;
+}
+
+.left-container-texts {
+  margin-top: 50px;
+}
+.left-container-texts p {
+  margin-top: 20px;
+  color: var(--CL-Grey, #737373);
+  font-family: Brown;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
+}
+.right-container {
+  width: 50%;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  height: auto;
+  padding: 40px;
+}
+.input-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
+  grid-template-rows: auto auto; /* 2 rows */
+  gap: 30px; /* space between grid items */
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-item label {
+  margin-bottom: 10px; /* space between label and input */
+}
+
+.input-item input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+.sex{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.input-n {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+button {
+  width: 100%;
+  height: 49px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: #2ec4b6;
+  filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.1));
+  color: white;
+  border: none;
+}
+@media (max-width: 480px) {
+  .main-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    justify-content: start;
+  }
+  form {
+    /* display: none; */
+  }
+  .left-container {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+  }
+  .right-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .left-container-texts {
+    margin-top: 20px;
+  }
+  .input-grid {
+    grid-template-columns: 1fr; /* 1 column for smaller screens */
+  }
+  .footer{
+    text-align: center;
+  }
+}
